@@ -126,7 +126,7 @@ const App = () => {
 
   return (
     <div className="App">
-      <ParticlesBg type="fountain" bg={true} />
+      <ParticlesBg type="circle" bg={true} />
       <Navigation isSignedIn={isSignedIn} onRouteChange={onRouteChange} />
       {route === 'home' ? (
         <div>
