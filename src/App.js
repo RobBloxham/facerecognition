@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import ParticlesBg from 'particles-bg';
 import Clarifai from 'clarifai';
 import FaceRecognition from './components/FaceRecognition/FaceRecognition';
@@ -60,6 +60,13 @@ const App = () => {
     entries: 0,
     joined: ''
   });
+
+/*  useEffect(() => {
+    fetch('http://localhost:3000')
+    .then(response => response.json())
+    .then(console.log)
+  }, [])
+*/
 
   const loadUser = (data) => {
     setUser({
